@@ -1,0 +1,48 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{restaurant.name}
+        link(rel="icon", href="/images/favicon.png")
+        link(rel="stylesheet", href="/CSS/restaurant.css")
+        script(type="text/javascript" src="/client.js")
+
+    body(onload="initRestaurantPage(" + JSON.stringify(restaurant) + ")")
+        div#head
+
+        h2#restId Restaurant ID: #{restaurant.id}
+        p(class="infoLabel") Restaurant Name: 
+            input(type="text" id="name" value= restaurant.name)
+        p(class="infoLabel") Restaurant Minimum Order: 
+            input(type="text" id="min" value= restaurant.min_order)
+        p(class="infoLabel") Delivery Fee:  
+            input(type="text" id="fee" value= restaurant.delivery_fee)
+        
+        br
+
+        h2 Add Category: 
+        p(class="infoLabel") Category Name: 
+            input(type="text" id="categoryName")
+        button(onclick="addCategory()") Add Category
+        
+        -let categories = Object.keys(restaurant.menu) 
+        
+        h2 Add Item:
+        p(class="infoLabel") Select Category: 
+            select#categories
+                each category in categories
+                    option #{category}
+       
+        p(class="infoLabel") Item Name: 
+            input(type="text" id="itemName")
+        p(class="infoLabel") Item Description: 
+            input(type="text" id="itemDesc")
+        p(class="infoLabel") Item Price: 
+            input(type="text" id="itemPrice")
+        button(onclick="addMenuItem()") Add Item
+       
+        h2 Menu:
+        div#menu
+        button(onclick="sendUpdatedData()") Save Changes
+
+

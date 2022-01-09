@@ -1,0 +1,16 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Browse Restaurants
+        link(rel="icon", href="/images/favicon.png")
+        link(rel="stylesheet", href="/CSS/browse.css")
+        script(type="text/javascript" src="/client.js")
+
+    body(onload="createHeader();")
+        div#head
+
+        each restaurant in restaurants 
+            a(href="/restaurants/" + restaurant.id) #{restaurant.name}
+            br
+            br
