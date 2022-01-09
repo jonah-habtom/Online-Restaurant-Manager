@@ -1,0 +1,23 @@
+#head {
+    background-color: black;
+    text-align: center;
+    padding: 0.5%;
+    margin-bottom: 2%;
+}
+
+.btn {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 5%;
+}
+
+body {
+    background-color:cornflowerblue;
+}
+
+a {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+}

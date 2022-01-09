@@ -1,0 +1,53 @@
+#head {
+    background-color: black;
+    text-align: center;
+    padding: 0.5%;
+    margin-bottom: 2%;
+}
+
+.btn {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 5%;
+}
+
+body {
+    background-color:cornflowerblue;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.infoLabel {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    font-size: 16px;
+}
+
+button {
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    margin-bottom: 2%;
+}
+
+select {
+    font-size: 16px;
+}
+
+.categoryHeader {
+    text-decoration: underline;;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nameAndPriceHeader, .itemId, .descHeader {
+    font-weight: bold;
+    font-size: 18px;
+}

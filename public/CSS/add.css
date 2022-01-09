@@ -1,0 +1,38 @@
+#head {
+    background-color: black;
+    text-align: center;
+    padding: 0.5%;
+}
+
+.btn {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 5%;
+}
+
+body {
+    background-color:cornflowerblue;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+input {
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+#top {
+    margin-top: 4%;
+}
+
+#submit {
+    font-size: 22px;
+    color:white;
+    background-color: black;
+    padding: 1%;
+}
